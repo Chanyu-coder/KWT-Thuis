@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 50px 0;
+  color: #1f2937;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.subject-button {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subject-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.wiskunde { background: linear-gradient(to right, #3b82f6, #1e40af); }
+.nederlands { background: linear-gradient(to right, #10b981, #065f46); }
+.geschiedenis { background: linear-gradient(to right, #ef4444, #991b1b); }
