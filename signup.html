@@ -3,40 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aanmelden - KWT Helper</title>
+  <title>KWT Thuis - Aanmelden</title>
   <link rel="stylesheet" href="signup.css">
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  
+  <!-- Your JS file -->
+  <script defer src="signup.js"></script>
 </head>
 <body>
   <header>
-    <h1>KWT Helper</h1>
+    <h1>KWT Thuis</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="login.html">Inloggen</a>
       <a href="signup.html" class="active">Aanmelden</a>
+      <a href="login.html">Inloggen</a>
     </nav>
   </header>
 
   <main class="form-container">
     <h2>Aanmelden</h2>
-    <p>Meld je aan om toegang te krijgen tot de vakken.</p>
-
-    <form>
+    <form id="signup-form">
       <label for="username">Gebruikersnaam</label>
-      <input type="text" id="username" name="username" placeholder="Kies een naam" required>
+      <input type="text" id="username" required placeholder="Bijv. Jan123">
 
       <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" placeholder="jij@example.com" required>
+      <input type="email" id="email" required placeholder="jij@example.com">
 
       <label for="password">Wachtwoord</label>
-      <input type="password" id="password" name="password" placeholder="••••••••" required>
+      <input type="password" id="password" required placeholder="••••••••">
 
       <button type="submit">Aanmelden</button>
     </form>
+    <p id="message"></p>
   </main>
 
   <footer>
-    <p>📌 Alleen voor huiswerk en lessen.  
-    Wil je chatten over andere dingen? Gebruik WhatsApp, Teams of een ander platform.</p>
+    <p>📌 Alleen voor huiswerk en lessen. Gebruik WhatsApp, Teams of een ander platform voor andere chats.</p>
   </footer>
 </body>
 </html>
